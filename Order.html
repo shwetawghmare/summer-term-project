@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Order Form</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Cake Order Form</h1>
+    <form action="submit_order.php" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="Address">Address</Address></label>
+        <input type="text" id="location" name="Address" required>
+        </div>
+      <div class="form-group">
+        <label for="cake-type">Cake Type:</label>
+        <select id="cake-type" name="cake-type" required>
+          <option value="chocolate">Chocolate Cake</option>
+          <option value="Rasmalai Cake">Rasamlai Cake</option>
+          <option value="butterscotch">Butterscotch Cake</option>
+          <option value="german-forest">German Forest Cake</option>
+          <option value="mawacake">Mawa cake</option>
+          <option value="redvelvet">Redvelvet Cake</option>
+          <option value="unicorn cake">Rainbow unicorn cake</option>
+          <option value="kitkat cake">Kitkat Cake</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="flavor">Flavor:</label>
+        <input type="text" id="flavor" name="flavor" required>
+      </div>
+      <div class="form-group">
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Special Instructions:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Enter any special instructions..."></textarea>
+      </div>
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+</body>
+</html>
